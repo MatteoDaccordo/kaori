@@ -1,0 +1,119 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimaryRed</item>
+
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="buttonStyle">@style/KaoriButton</item>
+        <item name="android:textViewStyle">@style/KaoriTextView</item>
+
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomTransitions</item>
+    </style>
+
+    <style name="KaoriButton">
+        <item name="android:layout_height">@dimen/default_height</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">@dimen/default_margin</item>
+        <item name="android:layout_marginEnd">@dimen/default_margin</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:background">@drawable/rounded_edge</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryRed</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/colorPrimaryRed</item>
+    </style>
+
+    <style name="LoginTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="KaoriProgressBar" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:indeterminateTint">@color/colorPrimary</item>
+        <item name="android:layout_width">@dimen/default_height</item>
+        <item name="android:layout_height">@dimen/default_height</item>
+    </style>
+
+    <!-- TextView -->
+    <style name="KaoriTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:layout_height">@dimen/default_height</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">@dimen/default_margin</item>
+        <item name="android:layout_marginEnd">@dimen/default_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:colorFocusedHighlight">@color/colorPrimaryRed</item>
+    </style>
+
+    <style name="KaoriUpTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/default_up_text_size</item>
+        <item name="android:layout_height">@dimen/default_height</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorPrimaryRed</item>
+    </style>
+
+    <style name="KaoriSubTitleTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/app_name</item>
+    </style>
+
+    <style name="KaoriTextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColorHint">@color/defaultTextColor</item>
+        <item name="boxCornerRadiusBottomEnd">50dp</item>
+        <item name="boxCornerRadiusTopEnd">50dp</item>
+        <item name="boxCornerRadiusBottomStart">50dp</item>
+        <item name="boxCornerRadiusTopStart">50dp</item>
+    </style>
+
+    <style name="KaoriHintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/colorPrimaryRed</item>
+    </style>
+
+    <style name="MaterialStyle" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+    </style>
+
+    <style name="CustomTransitions">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="MaterialSpinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="KaoriDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+</resources>
